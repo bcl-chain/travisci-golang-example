@@ -10,3 +10,10 @@ script:
   - test -z "`golint ./...`"
   - $GOPATH/bin/goveralls -service=travis-ci
   - go test -v ./...
+notifications:
+  email:
+    recipients:
+      - youtao.xing@icloud.com
+      - k-katsushima@nri.co.jp
+    on_success: never # default: change
+    on_failure: always # default: always

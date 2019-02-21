@@ -1,4 +1,4 @@
-// This package is a Travis-CI example package.
+// Package newmath is a Travis-CI example package.
 package newmath
 
 // Sqrt returns an approximation to the square root of x.
