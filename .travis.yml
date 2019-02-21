@@ -6,6 +6,12 @@ env:
     - COVERALLS_PARALLEL=true
 notifications:
   webhooks: https://coveralls.io/webhook
+  email:
+    recipients:
+      - youtao.xing@icloud.com
+      - k-katsushima@nri.co.jp
+    on_success: always # default: change
+    on_failure: always # default: always
 before_install:
   - go get -u golang.org/x/lint/golint
   - go get github.com/axw/gocov/gocov
